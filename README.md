@@ -1,13 +1,12 @@
 ![logo](https://github.com/AntenorJunior78/html/blob/main/logo.png)
 
-Here will be stored all files and data required to build a soil resistivity meter for geophysical survey applications. This is a scientific instrument under development at the Laboratory for the Development of Magnetic Sensors (LDSM) of the National Observatory, based in Rio de Janeiro-Brazil (https://www.gov.br/observatorio/pt-br). 
-
-Citation reference: https://doi.org/10.5281/zenodo.7411844
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Here will be stored all files and data required to build a soil resistivity meter for geophysical survey applications. This is a scientific instrument under development at the Laboratory for the Development of Magnetic Sensors (LDSM) of the National Observatory, based in Rio de Janeiro-Brazil (https://www.gov.br/observatorio/pt-br). 
+
+Citation reference: https://doi.org/10.5281/zenodo.7411844
 
 ### Prerequisites
 
