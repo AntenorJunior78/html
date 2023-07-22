@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pandas
+scipy
+requests
+psutil
+pyvista
+
