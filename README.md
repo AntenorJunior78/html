@@ -74,7 +74,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Citing 
 
-If you use ResIPy for you work, please cite this paper as:
+If you use Geo-Resistivity-Meter for you work, please cite this paper as:
 
 
 
