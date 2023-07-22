@@ -4,9 +4,6 @@ Here will be stored all files and data required to build a soil resistivity mete
 
 Citation reference: https://doi.org/10.5281/zenodo.7411844
 
-# Project Title
-
-One Paragraph of project description goes here
 
 ## Getting Started
 
