@@ -52,17 +52,17 @@ The inversion takes place in the working directory specified by the R2 object wh
 5. For the code to work correctly, the imported modules must be available in the execution environment, and any other dependencies must be installed.
 '''
 
-from tkinter import*
+# Import the required modules
+from tkinter import *
 from PIL import Image, ImageTk
-from tkinter import ttk  
+from tkinter import ttk
 import time
-#import calculadora as cl
 import customtkinter
 import sys
 import re
 from tkinter import filedialog
 from tkinter.ttk import *
-from tkinter import*
+from tkinter import *
 from PIL import Image, ImageTk
 import time
 import numpy as np
@@ -76,17 +76,20 @@ from time import strftime
 import os
 from io import StringIO
 from datetime import datetime
-import salve as sv  # create and save files
 
+# Import the askdirectory function from filedialog
 from tkinter.filedialog import askdirectory
 import tkinter.messagebox
 
+# Import the showinfo function from messagebox
+from tkinter.messagebox import showinfo
 
-from tkinter.messagebox import showinfo#informa qual arrajo selecionado
-
+# Import the webbrowser module
 import webbrowser
 
+# Import the platform module
 import platform
+
 
 
 
@@ -103,7 +106,7 @@ def run():
     root.geometry("%dx%d+%d+%d" %(width_of_window,height_of_window,x_coordinate,y_coordinate))
     root.configure(bg='white')
 
-    icon = PhotoImage(file="fig/energia3.png")#logo
+    icon = PhotoImage(file="figure/energia3.png")#logo
     root.iconphoto(True, icon)
         
     my_font=('arial', 20, 'bold')
@@ -182,7 +185,7 @@ def run():
         Button(tab1, text = "Submit: ", command = create_file).place(x=265, y= 300)
         
 
-    logo_image1 = ImageTk.PhotoImage(Image.open("fig/energia3.png"))
+    logo_image1 = ImageTk.PhotoImage(Image.open("figure/energia3.png"))
     Label(tab1, image=logo_image1).place(x=5, y=5)
     Label(tab1,text = "Geo-Resistivity-Meter",font=my_font1).place(x=90, y= 10)
 
@@ -200,7 +203,7 @@ def run():
     def click2():
         webbrowser.open_new(r"https://www.gov.br/observatorio/pt-br")
             
-    logo_git = ImageTk.PhotoImage(Image.open("fig/git.png"))
+    logo_git = ImageTk.PhotoImage(Image.open("figure/git.png"))
     Label(tab1, image=logo_git).place(x=20, y=130)
     logo_caution = ImageTk.PhotoImage(Image.open("fig/caution.png"))
         
@@ -275,7 +278,7 @@ def run():
             k.createSurvey(testdir + 'root_file.csv', ftype='Syscal') # read the survey file
                     
                     
-            # Função para redirecionar a saída padrão para um widget de texto no Tkinter
+            # Function to redirect standard output to a text widget in Tkinter
             class StdoutRedirector:
                 def __init__(self, text_widget):
                     self.text_widget = text_widget
@@ -286,9 +289,9 @@ def run():
                     self.text_widget.insert(END, text)
                     self.text_widget.see(END)
 
-            # Criar janela principal do Tkinter
+            # Create Tkinter main window
                     
-            # Criar um widget de texto para exibir a saída
+            # Create a text widget to display the output
             output_text = Text(tab1, width=62, height=8)
             output_text.place(x=392, y=381)
             
@@ -306,7 +309,7 @@ def run():
             print("")
             print("<<<<<<<<<<<<<<<<<<<<  "+date_time+"  >>>>>>>>>>>>>>>>>")
 
-            # Função para exibir a saída
+            # Function to display the output
        
                 
             k.filterUnpaired()
@@ -321,29 +324,29 @@ def run():
             def create_folder_and_save(df, path, folder_name):
                 
                 global file_path
-                # Obter a data e hora atual
+                # Get the current date and time
                 current_time_date = datetime.now().strftime("%d%m%Y_%H%M%S")
                 
                 folder_path = os.path.join(path, folder_name + "_" + current_time_date)
                 os.makedirs(folder_path, exist_ok=True)
 
-                # Salva o arquivo dentro da pasta
+                # Save the file inside the folder
                 file_path = os.path.join(folder_path, folder_name + "_" + current_time_date + ".csv")
                 df.to_csv(file_path, index=False)
                 return file_path
 
             # ...
 
-            # Chamada da função
+            # Here should be the path of the root file that contains the measurement data
             
-            df = pd.read_csv('C:/Users/ON/Desktop/GuitHub/gitHub_2/src/examples/dc-2d/root_file.csv')
+            df = pd.read_csv('root_file.csv')
             
             create_folder_and_save(df, path.get(), folder.get())
             
 
             
-            # exclua o espaço no final e no início dos nomes das colunas
-            headers = df.columns#criar uma lista cabeçalhos da planiha
+            # delete space at end and beginning of column names
+            headers = df.columns#create a worksheet headers list
             if 'Spa.1' in headers:
                     newheaders = list(map(str.strip, headers)) 
                     dico = dict(zip(headers, newheaders))
@@ -356,7 +359,7 @@ def run():
                                                     'In':'I(mA)',
                                                     'Vp':'vp',
                                                     'Dev.':'dev',
-                                                    'M':'ip', #M1, M2,...Mn são bons por enquanto ao importar
+                                                    'M':'ip',
                                                     'Sp':'sp'})
                  
             frame = Frame(tab2)
@@ -366,25 +369,25 @@ def run():
             table = pt = Table(frame, dataframe=df,showtoolbar=True, showstatusbar=True,width=890, height=480)
             pt.show()
                     
-            # Criar uma figura e um eixo para o gráfico
+            # Create a figure and axis for the chart
             fig, ax = plt.subplots(figsize=(14, 8))
 
-            # Executar k.showPseudo() e plotar o gráfico
+            # Run k.showPseudo() and plot the graph
             k.showPseudo(ax=ax)
 
-            # Criar o widget do canvas para exibir a figura
+            # Create the canvas widget to display the picture
             canvas = FigureCanvasTkAgg(fig, master=tab3)
             canvas.draw()
             canvas.get_tk_widget().pack()
                     
             #=====================================
-            # Criar uma figura e um eixo para o gráfico
+            # Create a figure and axis for the chart
             fig, ax = plt.subplots(figsize=(14, 8))
 
-            # Executar k.showPseudo() e plotar o gráfico
+            # Run k.showPseudo() and plot the graph
             k.fitErrorLin(ax=ax)
 
-            # Criar o widget do canvas para exibir a figura
+            # Create the canvas widget to display the picture
             canvas = FigureCanvasTkAgg(fig, master=tab4)
             canvas.draw()
             canvas.get_tk_widget().pack()
@@ -406,7 +409,7 @@ def run():
             canvas.draw()
             canvas.get_tk_widget().pack()
 
-            # Caminho completo para o arquivo de imagem
+            # Full path to image file
             caminho_imagem = os.path.join(file_path, file_path + "_" + current_time_date + ".jpg")  # Replace with the desired file name
 
             # Save the canvas as a PNG image in the destination folder
@@ -414,10 +417,7 @@ def run():
             print("")
             print(path.get()+"/"+folder.get())
             
-            
-            
-            
-            
+  
             
             print("<<<<<<<<<<<<<<<<<<<<  "+date_time+"  >>>>>>>>>>>>>>>>>")
             print("")
