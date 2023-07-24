@@ -1,14 +1,7 @@
 # Contributing to the Geo-Resistivity-Meter Project
 
-We appreciate your interest in contributing to the Geo-Resistivity-Meter project! Your collaboration is essential for the development and continuous improvement of this software. To ensure an efficient and friendly contribution, please follow the guidelines below:
-
-## Code of Conduct
-
-1. Be respectful and courteous to all community members. Avoid offensive language, personal attacks, or inappropriate behavior.
-
-2. Maintain an inclusive environment where everyone feels welcome and valued, regardless of their background, gender identity, sexual orientation, abilities, or any other personal characteristic.
-
-3. Prioritize constructive discussion and teamwork. Feedback is welcome, as long as it is offered respectfully and substantively.
+We appreciate your interest in contributing to the Geo-Resistivity-Meter project! Your collaboration is essential for the development and continuous improvement of this software. To ensure an efficient and friendly contribution, please follow the guidelines below.<br>
+Prioritize constructive discussion and teamwork. Feedback is welcome, as long as it is offered respectfully and substantively.
 
 ## How to Contribute
 
