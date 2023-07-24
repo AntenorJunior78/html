@@ -23,27 +23,24 @@ Python Libraries: The following Python libraries are required to run the softwar
 <li>pandastable</li>
 <li>matplotlib</li>
 <li>resipy</li>
+<li>jupyter notebook</li>
 </ul>
 
 
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Here are the steps to set up a development environment and run the Geo-Resistivity-Meter:
+<br>
+Install Python: If you don't have Python installed yet, download and install the latest Python 3 version from the official Python website (https://www.python.org/).
+Download the Source Code: Download the Geo-Resistivity-Meter source code from the GitHub repository at https://github.com/LDSM-ON/Geo-Resistivity-meter.
+<br>
+Navigate to the Project Directory: Open the terminal or command prompt and navigate to the directory where you downloaded the Geo-Resistivity-Meter source code.
+<br>
+Run the Program: With all the required libraries and files installed, you can run the program by opening the Python file named "Geo-Resistivity-Meter.py". <br>
+The program will start, and the graphical interface of the Geo-Resistivity-Meter will be displayed, allowing you to interact with the different functionalities of the software.
+<br>
+Now you have the development environment set up and the Geo-Resistivity-Meter running on your computer. You can explore the various geophysical analysis and functionalities offered by the program. Remember that any additional dependencies or specific files required for the correct operation of the software should be downloaded and configured as needed.
 
 ## Running the tests
 
