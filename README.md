@@ -58,21 +58,17 @@ If you wish to contribute to the Geo-Resistivity-Meter project, please follow th
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+**We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). **
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+The initial work on the Geo-Resistivity-Meter system was carried out by Mr. Antenor O. C. Junior (antenorjuniot@on.br), Dr. André Wiermann (andrew@on.br), and Dr. Cosme Ferreira da Ponte-Neto (cosme@on.br). Additionally, there are other contributors who also participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Our thanks and recognition to all those who have contributed in any way to the development of the Geo-Resistivity-Meter project.
 
