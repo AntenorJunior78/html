@@ -10,11 +10,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+In this code, to run the Geo-Resistivity-Meter software, you will need the following prerequisites:
 
-```
-Give examples
-```
+Python: Make sure you have Python installed on your computer. The software was developed using Python 3.
+
+Python Libraries: The following Python libraries are required to run the software:
+
+&bull tkinter
+PIL (Python Imaging Library)
+numpy
+pandas
+pandastable
+matplotlib
+resipy
+
+
 
 ### Installing
 
